@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+.wrapper {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.categoryWrapper {
+  width: 1300px;
+  margin: 0px auto;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 4fr);
+  grid-gap: 20px 20px;
+}
+.title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px auto;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text);
+}
+.goBack{
+  align-self: start;
+  position: relative;
+  top: -55px;
+}
+.goBack a:hover{
+  color: #000000 !important;
+  text-shadow: 0px 0px 1px rgb(138, 136, 136);
+}
+.emptyPage{
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.emptyPage img{
+  width: 400px;
+}
+.show{
+  display: block;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1024px) {
+  .categoryWrapper {
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, 3fr);
+    grid-gap: 100px 20px;
+  }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .title {
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+  }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .categoryWrapper {
+    width: 100%;
+    margin: 0px auto;
+    padding-bottom: 70px;
+    grid-template-columns: 1fr;
+    grid-gap: 20px 0px;
+  }
+  img.noDataImg{
+    margin-top: 50px;
+    width: 250px;
+  }
+  .goBack{
+    align-self: center;
+    position: relative;
+    top: -75px;
+  }
+  .title {
+    margin: 30px auto 10px auto;
+    font-size: 26px;
+  }
+ }

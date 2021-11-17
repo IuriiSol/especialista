@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+.wrapper {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background: #fff;
+  border-top: 1px solid #acacac;
+}
+.innerWrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.logoImg {
+  width: 50px;
+  background: #fff;
+  position: relative;
+}
+.social{
+  display: flex;flex-direction: row;
+}
+.insta,
+.face{
+  margin-left: 10px;
+  transition: linear 300ms;
+}
+.face i:hover{
+  color: rgb(3, 157, 247);
+}
+.insta i:hover{
+  color: rgb(219, 3, 247);
+}
+.insta i,
+.face i{
+  font-size: 28px;
+}
+
+
+/* /////////////////////////RESPONSIVE///////////////////////// */
+
+
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1280px) {
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+  }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+  .logoImg {
+    width: 50px;
+  }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+  .logoImg {
+    width: 50px;
+  }
+  .insta i,
+  .face i{
+    font-size: 24px;
+  }
+  .text{
+    text-align: center;
+    font-size: 12px;
+    width: 40%;
+  }
+}

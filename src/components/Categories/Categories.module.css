@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 150px 0;
+}
+.title {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px auto 50px auto;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text);
+}
+.categoryWrapper {
+  display: grid;
+	width: 100%;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(8, auto);
+  grid-gap: 20px;
+}
+.catItemWrap{
+  border: none;
+}
+.category__item{
+  width: 120px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.category__item:hover {
+  transition: linear 0.3s;
+  filter: drop-shadow(0 0 5px rgb(56, 56, 56));
+}
+.category__item img {
+  border: 2px solid #747474;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.category__item_name {
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+
+
+ /* X-Large devices (large desktops, 1200px and up) */
+ @media (max-width: 1280px) {
+  .title {
+    margin: 0px auto 40px auto;
+    font-size: 40px;
+  }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1024px) {
+  .categoryWrapper {
+    display: grid;
+    width: 100%;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(8, auto);
+    grid-gap: 20px;
+  }
+  .catItemWrap{
+    border: none;
+  }
+  .category__item{
+    width: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 14px;
+  }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .title {
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+  }
+  .categoryWrapper {
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+  }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .categoryWrapper {
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+  }
+ }
