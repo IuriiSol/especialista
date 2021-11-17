@@ -43,7 +43,7 @@ const IT = (props) => {
             <div className={classes.categoryWrapper}>
               {Data.map((user) => (
                 <div className={classes.profileWrap} key={user.id}>
-                  <Link to={location => ({ ...location, pathname: "/it/" + user.id })} >
+                  <Link to={"/it/" + user.id } >
                     <Profile props={user} />
                   </Link>
                 </div>

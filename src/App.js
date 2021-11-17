@@ -35,6 +35,7 @@ import StoreContext from "./StoreContext";
 import { useUserContext } from "./context/userContext";
 import Auth from "./components/auth";
 import Footer from "./components/Footer/Footer";
+import ProfilePage from "./components/Profile/ProfilePage";
 
 
 
@@ -42,10 +43,10 @@ import Footer from "./components/Footer/Footer";
 function App() {
   const { user } = useUserContext();
   return (
-    <BrowserRouter>
     <StoreContext.Consumer>
     {Data => (
       <>
+      <BrowserRouter>
         <div className="App">
           <Header />
           <Route path="/searchResult" name="Search"><Search props={Data}/></Route>
@@ -80,10 +81,10 @@ function App() {
           <Route path="/other" name="Other"><Other props={Data}/></Route>
           <Footer/>
         </div>
+    </BrowserRouter>
       </>
     )}
     </StoreContext.Consumer>
-    </BrowserRouter>
   );
 }
 

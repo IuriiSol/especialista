@@ -21,12 +21,11 @@ const ProfilePage = (props) => {
     });
   };
   getData();
-    // console.log(props.match.params.id);
   return (
     <BrowserRouter>
        <Route
-        path="*/:id"
-        name="Beauty"
+        path=""
+        name="ProfilePage"
         render={() => (
         <div className={classes.wrapper}>
             <div className={classes.goBack}>
