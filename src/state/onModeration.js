@@ -66,6 +66,7 @@ import { useUserContext } from "../context/userContext";
                                 location: user.location,
                                 address: user.address,
                                 profession: user.profession,
+                                shortDescription: user.shortDescription,
                                 description: user.description,
                                 phone: user.phone,
                                 email: user.email,
@@ -88,6 +89,7 @@ import { useUserContext } from "../context/userContext";
                 <h5>Location: {user.location || "Not indicated"}</h5>
                 <h5>Address: {user.address || "Not indicated"}</h5>
                 <h5>Profession: {user.profession}</h5>
+                <h5>Short description: {user.shortDescription}</h5>
                 <h5>Description: {user.description}</h5>
                 <h5>Tags: {user.tags}</h5>
                 <h5>Phone: {user.phone || "Not indicated"}</h5>

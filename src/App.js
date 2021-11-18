@@ -35,7 +35,6 @@ import StoreContext from "./StoreContext";
 import { useUserContext } from "./context/userContext";
 import Auth from "./components/auth";
 import Footer from "./components/Footer/Footer";
-import ProfilePage from "./components/Profile/ProfilePage";
 
 
 

@@ -33,11 +33,11 @@
 }
 .searchResultContainer{
   width: 1200px;
-  margin: 100px auto;
+  margin: 30px auto 120px auto;
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(3, 4fr);
-  grid-gap: 100px 20px;
+  grid-gap: 30px 20px;
 }
 
 .goBack{
