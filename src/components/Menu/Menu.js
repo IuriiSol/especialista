@@ -13,7 +13,7 @@ const Menu = ({ open, setOpen, ...props }) => {
       <Link open={open} onClick={() => setOpen(!open)} className={classes.link} to="/">На главную</Link>
       <Link open={open} onClick={() => setOpen(!open)} className={classes.link} to="/categories">Категории</Link>
       <Link open={open} onClick={() => setOpen(!open)} className={classes.link} to="/aboutUs">О проекте</Link> 
-      <Link open={open} onClick={() => setOpen(!open)} className={classes.link} to="/addProfile">Я специалист</Link> 
+      <Link open={open} onClick={() => setOpen(!open)} className={classes.link} to="/addProfile">Анкета</Link> 
     </StyledMenu>
   )
 }

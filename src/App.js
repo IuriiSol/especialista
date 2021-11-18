@@ -49,12 +49,13 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Header />
-          <Route path="/searchResult" name="Search"><Search props={Data}/></Route>
           <Route exact path="/" name="MainScreen"><MainScreen props={Data}/></Route>
+          <Route path="/searchResult" name="Search"><Search props={Data}/></Route>
           <Route path="/categories" name="Categories" component={Categories} />
           <Route path="/aboutUs" name="AboutUs" component={AboutUs} />
           <Route path="/addProfile" name="AddProfile" component={AddNewProfile} />
           <Route path="/admin" name="OnModeration"> {user ? <OnModeration /> : <Auth />} </Route>
+          {/*/////////////////////////////////////////// Categories ///////////////////////////////////////////*/}
           <Route path="/it" name="IT"><IT props={Data}/></Route>
           <Route path="/carRepair" name="Mechanics"><Mechanics props={Data}/></Route>
           <Route path="/beauty" name="Beauty"><Beauty props={Data}/></Route>

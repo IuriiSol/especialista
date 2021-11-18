@@ -12,6 +12,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
   function AddNewProfile() {
     
     const [progress, setProgress] = useState(0);
+    const [symbolsLeft, setSymbolsLeft] = useState(250);
     const [isPromoted, setIsPromoted] = useState(false);
     const [newName, setNewName] = useState("");
     const [newPhotoLink, setNewPhotoLink] = useState("");
@@ -67,7 +68,6 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
       const file = e.target.files[0];
       uploadFiles(file)
     }
-
 
     const uploadFiles = (file) => {
       if(!file) return;
@@ -152,7 +152,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
 
 
             <Form.Group className="mb-2" controlId="formName">
-              <Form.Label>Имя специалиста или компании</Form.Label>
+              <Form.Label>Имя специалиста или компании <span className={classes.asterics}>*</span></Form.Label>
               <Form.Control required type="name" placeholder="Иванов Иван Иванович / Бар Медуза / Мастерская SuperFast" onChange={(event) => {
                 setNewName(event.target.value);}}/>
             </Form.Group>
@@ -160,7 +160,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
             <Row>
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formCategory ">
-                  <Form.Label>Категория</Form.Label>
+                  <Form.Label>Категория <span className={classes.asterics}>*</span></Form.Label>
                   <Form.Select required aria-label="Default select example" type='select' onChange={(event) => {
                     setNewCategory(event.target.value);}
                   }>
@@ -211,7 +211,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               </Col>
               <Col>
                 <Form.Group className="mb-2" controlId="formProfession">
-                  <Form.Label>Профессия или чем Вы занимаетесь</Form.Label>
+                  <Form.Label>Профессия или чем Вы занимаетесь <span className={classes.asterics}>*</span></Form.Label>
                   <Form.Control required type="text" placeholder="Ваша профессия или чем Вы занимаетесь" onChange={(event) => {
                     setNewProfession(event.target.value);
                   }}/>
@@ -231,10 +231,12 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
             <Row>
               <Col xs={12}>
                 <Form.Group className="mb-2" controlId="formDescription">
-                  <Form.Label>Краткое описание</Form.Label>
+                  <Form.Label>Краткое описание <span className={classes.asterics}>*</span></Form.Label>
                   <Form.Control required as="textarea" maxLength={250} rows={3} type="text" placeholder="Краткое описание того чем Вы занимаетесь. Будет показано в карточке профиля(лимит 250 символов)" onChange={(event) => {
                     setNewShortDescription(event.target.value);
+                    setSymbolsLeft(250 - event.target.value.length)
                   }}/>
+                  <Form.Text>Осталось {symbolsLeft} символов</Form.Text>
                 </Form.Group>
               </Col>
               <Col xs={12}>
@@ -247,8 +249,8 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               </Col>
               <Col>
                 <Form.Group className="mb-2" controlId="formTags">
-                  <Form.Label>Слова которые помогут найти Вас в поиске </Form.Label>
-                  <Form.Control as="textarea" rows={3} type="text" placeholder="портимао дантист стоматолог ортодонт" onChange={(event) => {
+                  <Form.Label>Слова которые помогут найти Вас в поиске(Tags) </Form.Label>
+                  <Form.Control as="textarea" rows={3} type="text" placeholder="Пример: портимао дантист стоматолог ортодонт" onChange={(event) => {
                     setNewTags(event.target.value);
                   }}/>
                 </Form.Group>
@@ -259,8 +261,8 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                 <Form.Group className="mb-2" controlId="formPhone">
                   <Form.Label>Телефон</Form.Label>
                   <InputGroup className="mb-3">
-                    <InputGroup.Text id="basic-addon3">+351</InputGroup.Text>
-                    <Form.Control type="text" placeholder="Телефон по которому с Вами можно связаться" onChange={(event) => {
+                    <InputGroup.Text id="basic-addon3"><i class="bi bi-telephone"></i></InputGroup.Text>
+                    <Form.Control type="text" placeholder="Номер телефона, whatsapp, viber" onChange={(event) => {
                       setNewPhone(event.target.value);
                     }}/>
                   </InputGroup>
@@ -269,9 +271,12 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formEmail">
                   <Form.Label>Email</Form.Label>
-                  <Form.Control type="email" placeholder="Введите email по которому с Вами можно связаться" onChange={(event) => {
-                    setNewEmail(event.target.value);
-                  }}/>
+                  <InputGroup className="mb-3">
+                    <InputGroup.Text id="basic-addon3"><i class="bi bi-envelope"></i></InputGroup.Text>
+                    <Form.Control type="email" placeholder="Введите Ваш email" onChange={(event) => {
+                      setNewEmail(event.target.value);
+                    }}/>
+                  </InputGroup>
                 </Form.Group>
               </Col>
             </Row>
@@ -279,17 +284,23 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formSite">
                   <Form.Label>Сайт</Form.Label>
+                    <InputGroup className="mb-3">
+                    <InputGroup.Text id="basic-addon3"><i class="bi bi-card-text"></i></InputGroup.Text>
                   <Form.Control type="url" placeholder="Введите аддрес Вашего сайта" onChange={(event) => {
                     setNewSite(event.target.value);
                   }}/>
+                  </InputGroup>
                 </Form.Group>
               </Col>
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formInstagram">
                   <Form.Label>Instagram</Form.Label>
+                    <InputGroup className="mb-3">
+                    <InputGroup.Text id="basic-addon3"><i class="bi bi-instagram"></i></InputGroup.Text>
                   <Form.Control type="url" placeholder="Введите аддрес Вашего Instagram" onChange={(event) => {
                     setNewInstagram(event.target.value);
                   }}/>
+                  </InputGroup>
                 </Form.Group>
               </Col>
             </Row>
@@ -297,17 +308,23 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formFacebook">
                   <Form.Label>Facebook</Form.Label>
+                    <InputGroup className="mb-3">
+                    <InputGroup.Text id="basic-addon3"><i class="bi bi-facebook"></i></InputGroup.Text>
                   <Form.Control type="url" placeholder="Введите аддрес Вашего Facebook" onChange={(event) => {
                     setNewFacebook(event.target.value);
                   }}/>
+                  </InputGroup>
                 </Form.Group>
               </Col>
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formTelegram">
                   <Form.Label>Telegram</Form.Label>
+                    <InputGroup className="mb-3">
+                    <InputGroup.Text id="basic-addon3"><i class="bi bi-telegram"></i></InputGroup.Text>
                   <Form.Control type="url" placeholder="Введите аддрес Вашего Telegram" onChange={(event) => {
                     setNewTelegram(event.target.value);
                   }}/>
+                  </InputGroup>
                 </Form.Group>
               </Col>
             </Row>
@@ -318,7 +335,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               }}/>
             </Form.Group>
 
-            <Form.Group className="mb-3 mt-4" controlId="formCheck">
+            <Form.Group className="mb-4 mt-3" controlId="formCheck">
               <Form.Check type="checkbox" label="Я все перепроверил, все правильно" required/>
             </Form.Group>
             
