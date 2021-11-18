@@ -54,7 +54,11 @@
     padding: 20px 20px;
   }
   .text{
-    text-indent: 25px;
+    text-align: justify;
     font-size: 1em;
+  }
+  .aboutImg{
+    width: 250px;
+    margin: 30px 0;
   }
 }

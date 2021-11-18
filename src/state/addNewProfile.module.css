@@ -94,7 +94,7 @@
   @media (max-width: 576px) {
     .wrapper{
         width: 100%;
-        padding: 0;
+        padding: 0 0 50px 0;
     }
     .title {
         font-size: 28px;
@@ -108,7 +108,7 @@
     }
     .formWrapper>input,
     .formWrapper>textarea {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         padding: 5px 10px;
     }
     .profilesWrapper{
@@ -133,5 +133,6 @@
         border: 2px solid #b2bec3;
         border-radius: 10px;
         padding: 5px 10px;
+        margin: 20px;
     }
    }

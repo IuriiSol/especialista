@@ -3,6 +3,9 @@
   --text: #636e72;
   --hover: #000000;
 }
+a{
+  font-family: 'Montserrat', sans-serif;
+}
 
 body {
   background-image: url("./assets/background.jpg");

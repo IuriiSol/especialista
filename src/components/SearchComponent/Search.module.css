@@ -168,8 +168,6 @@
     margin-top: 20%;
   }
   .goBack{
-    align-self: center;
-    position: relative;
-    top: -105px;
+    display: none;
   }
  }

@@ -12,7 +12,7 @@
 }
 .profileItem_wrapper {
   border: 2px solid #b2bec3;
-  width: 50%;
+  width: 60%;
   border-radius: 10px;
   background: white;
   padding: 45px;
@@ -22,6 +22,10 @@
   align-self: start;
   position: relative;
   top: 20px;
+}
+.goBack a:hover{
+  color: #000000 !important;
+  text-shadow: 0px 0px 1px rgb(138, 136, 136);
 }
 
 .name {
@@ -180,5 +184,8 @@
   }
   .link{
     font-size: 14px;
+  }
+  .goBack{
+    display: none;
   }
 }
