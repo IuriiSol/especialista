@@ -53,7 +53,7 @@ const PastryChef = (props) => {
         )}
       />
       <Route exact path="/pastryChef/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

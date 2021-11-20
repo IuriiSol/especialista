@@ -53,7 +53,7 @@ const Insurance = (props) => {
         )}
       />
       <Route exact path="/insurance/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

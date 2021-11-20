@@ -53,7 +53,7 @@ const Guide = (props) => {
         )}
       />
       <Route exact path="/guide/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

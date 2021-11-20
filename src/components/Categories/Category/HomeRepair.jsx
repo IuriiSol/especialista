@@ -53,7 +53,7 @@ const HomeRepair = (props) => {
         )}
       />
       <Route exact path="/homeRepair/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

@@ -53,7 +53,7 @@ const Cafe = (props) => {
         )}
       />
       <Route exact path="/cafe/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

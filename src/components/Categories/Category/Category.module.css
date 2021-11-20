@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 .wrapper {
-  max-width: 1300px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 0 150px 0;
 }
 .categoryWrapper {
+  padding: 0 20px;
   width: 1300px;
   margin: 0px auto;
   display: grid;
@@ -39,10 +40,10 @@
   display: none;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
-.emptyPage img{
-  width: 400px;
+.noDataImg{
+  width: 350px;
 }
 .show{
   display: block;
@@ -59,13 +60,23 @@
     grid-template-columns: repeat(2, 3fr);
     grid-gap: 100px 20px;
   }
- }
+}
 
- /* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
+  .categoryWrapper {
+    margin: 10px auto;
+    grid-gap: 20px;
+  }
   .title {
-    margin: 0 auto 30px auto;
+    margin: 30px auto;
     font-size: 30px;
+  }
+  .noDataImg{
+    margin-top: 30%;
+  }
+  .goBack{
+    display: none;
   }
 }
 
@@ -86,7 +97,7 @@
     display: none;
   }
   .title {
-    margin: 30px auto 10px auto;
+    margin: 20px auto;
     font-size: 26px;
   }
  }

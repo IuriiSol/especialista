@@ -53,7 +53,7 @@ const Cleaning = (props) => {
         )}
       />
       <Route exact path="/сleaning/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

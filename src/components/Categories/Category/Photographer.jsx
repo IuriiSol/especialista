@@ -53,7 +53,7 @@ const Photographer = (props) => {
         )}
       />
       <Route exact path="/photographer/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

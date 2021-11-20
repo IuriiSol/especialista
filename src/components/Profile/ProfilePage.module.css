@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   padding: 50px 0 150px 0;
+  font-family: 'Montserrat', sans-serif;
+
 }
 .profileItem_wrapper {
   border: 2px solid #b2bec3;
@@ -52,10 +54,10 @@
   display: none;
 }
 
-.description {
+p.description {
   font-size: 16px;
   text-align: justify;
-  line-height: 1.3em;
+  line-height: 1.5em;
 }
 .location {
   text-align: center;
@@ -114,9 +116,7 @@
     position: relative;
   }
   .goBack{
-    align-self: center;
-    position: relative;
-    top: 10px;
+    display: none;
   }
   .profilePhoto {
     object-fit: cover;

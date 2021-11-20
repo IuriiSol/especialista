@@ -53,7 +53,7 @@ const Teacher = (props) => {
         )}
       />
       <Route exact path="/teacher/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

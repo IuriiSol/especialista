@@ -53,7 +53,7 @@ const ClothingRepair = (props) => {
         )}
       />
       <Route exact path="/it/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

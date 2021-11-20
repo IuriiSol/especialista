@@ -55,7 +55,7 @@ const Beauty = (props) => {
         )}
       />
       <Route exact path="/beauty/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

@@ -5,18 +5,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0;
+  padding: 15px 0;
   background: #fff;
   border-bottom: 1px solid #acacac;
 }
 .logoImg {
-  width: 150px;
+  width: 130px;
   background: #fff;
   position: relative;
   transition: linear 0.2s;
 }
 .logoImg:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .searchButton i:hover{
   color: rgb(0, 0, 0);
@@ -28,7 +28,7 @@ a {
 }
 .searchButton{
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 30px !important;
 }
 .searchButton i{

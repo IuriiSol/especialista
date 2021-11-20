@@ -53,7 +53,7 @@ const Sauna = (props) => {
         )}
       />
       <Route exact path="/sauna/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

@@ -52,7 +52,7 @@ const Mechanics = (props) => {
         )}
       />
       <Route exact path="/carRepair/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

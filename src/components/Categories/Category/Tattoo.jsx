@@ -53,7 +53,7 @@ const Tattoo = (props) => {
         )}
       />
       <Route exact path="/tattoo/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

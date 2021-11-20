@@ -53,7 +53,7 @@ const BabySitter = (props) => {
         )}
       />
       <Route exact path="/babySitter/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

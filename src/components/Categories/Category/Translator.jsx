@@ -53,7 +53,7 @@ const Translator = (props) => {
         )}
       />
       <Route exact path="/translator/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

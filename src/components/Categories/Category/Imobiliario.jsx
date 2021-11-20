@@ -53,7 +53,7 @@ const Imobiliario = (props) => {
         )}
       />
       <Route exact path="/imobiliario/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

@@ -53,7 +53,7 @@ const Ferms = (props) => {
         )}
       />
       <Route exact path="/ferms/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

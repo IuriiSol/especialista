@@ -53,7 +53,7 @@ const Other = (props) => {
         )}
       />
       <Route exact path="/other/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

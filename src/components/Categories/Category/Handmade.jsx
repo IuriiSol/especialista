@@ -53,7 +53,7 @@ const Handmade = (props) => {
         )}
       />
       <Route exact path="/handmade/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

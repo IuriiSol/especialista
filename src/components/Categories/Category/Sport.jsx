@@ -55,7 +55,7 @@ const Sport = (props) => {
         )}
       />
       <Route exact path="/sport/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

@@ -53,7 +53,7 @@ const Medicine = (props) => {
         )}
       />
       <Route exact path="/medicine/:id">
-        <ProfilePage userData={Data} />
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );

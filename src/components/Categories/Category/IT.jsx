@@ -9,6 +9,7 @@ import {
   withRouter,
 } from "react-router-dom";
 import ProfilePage from "../../Profile/ProfilePage";
+import { Redirect } from "react-router";
 
 const IT = (props) => {
   const Data = [];
@@ -43,7 +44,7 @@ const IT = (props) => {
             <div className={classes.categoryWrapper}>
               {Data.map((user) => (
                 <div className={classes.profileWrap} key={user.id}>
-                  <Link to={"/it/" + user.id } >
+                  <Link to={location => ({ ...location, pathname: "/it/" + user.id })} >
                     <Profile props={user} />
                   </Link>
                 </div>
@@ -52,8 +53,9 @@ const IT = (props) => {
           </div>
         )}
       />
-      <Route exact path="/it/:id">
-        <ProfilePage userData={Data} />
+
+      <Route path="/it/:id">
+          <ProfilePage  />
       </Route>
     </BrowserRouter>
   );

@@ -53,7 +53,7 @@ const Transportation = (props) => {
           )}
         />
       <Route exact path="/transportation/:id">
-        <ProfilePage userData={Data} Data={[]}/>
+        <ProfilePage />
       </Route>
     </BrowserRouter>
   );
