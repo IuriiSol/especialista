@@ -10,7 +10,6 @@
   justify-content: center;
   padding: 50px 0 150px 0;
   font-family: 'Montserrat', sans-serif;
-
 }
 .profileItem_wrapper {
   border: 2px solid #b2bec3;
@@ -48,7 +47,7 @@
   width: 150px;
   height: 150px;
   border-radius: 6px;
-  margin: 0 15px 15px 0;
+  margin: 20px 15px 5px 0;
 }
 .noData{
   display: none;
@@ -58,12 +57,12 @@ p.description {
   font-size: 16px;
   text-align: justify;
   line-height: 1.5em;
+  margin-top: 20px;
 }
 .location {
   text-align: center;
   font-size: 16px;
   color: rgb(114, 113, 113);
-  margin-bottom: 20px;
 }
 
 .contacts{
@@ -156,6 +155,7 @@ p.description {
     margin: 5px 0;
   }
   .profileItem_wrapper {
+    border: 1px solid #b2bec3;
     padding: 20px;
   }
   .profilePhoto {
@@ -164,26 +164,29 @@ p.description {
     height: 120px;
     position: static;
     border-radius: 6px;
-    margin: 0 10px 0 0;
+    margin: 15px 10px 0 0;
   }
   .proffesion {
     max-width: 100%;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 10px;
   }
-  .description {
-    font-size: 16px;
-    text-align: justify;
-    line-height: 1.2em;
+  .location{
+    font-size: 13px;
   }
-
+  p.description {
+    font-size: 13px;
+    text-align: justify;
+    line-height: 1.5em;
+  }
   .contacts{
+    padding-top: 10px;
     position: static;
     display: flex;
     flex-direction: column;
   }
   .link{
-    font-size: 14px;
+    font-size: 12px;
   }
   .goBack{
     display: none;

@@ -154,6 +154,7 @@
   .searchResultContainer{
     width: 100%;
     margin: 20px auto;
+    padding-bottom: 40%;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(1, auto);
@@ -169,6 +170,7 @@
   .nodataResult{
     width: 250px;
     margin-top: 20%;
+    margin-bottom: 60%;
   }
   .goBack{
     display: none;

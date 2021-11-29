@@ -148,7 +148,7 @@ li{
     font-size: 44px;
   }
   .carousel{
-    padding: 0 40px;
+    padding: 0 20px;
   }
   .aboutContent ul{
     padding: 0 15px;
@@ -164,25 +164,29 @@ li{
 @media (max-width: 576px) {
   .wrapper {
     width: 100%;
-    padding: 40px 0 50px 0;
+    padding: 40px 0 10px 0;
   }
   .mainScreen{
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .mainTitle{
-    margin: 10px;
+    margin: 0px;
     font-size: 30px;
   }
   .subtitle{
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
-    margin: 20px;
+    margin: 20px 0 10px 15px;
+  }
+  .carousel{
+    padding: 0;
   }
   .aboutContent ul{
     padding: 0 15px;
   }
   .aboutContent ul li{
-    font-size: 12px;
+    font-size: 13px;
+    text-align: justify;
   }
 
  }

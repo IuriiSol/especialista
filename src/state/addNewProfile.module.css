@@ -52,7 +52,7 @@
     border: 1px solid thistle;
     background: #fff;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .logout{
@@ -60,6 +60,7 @@
     border: 2px solid #b2bec3;
     border-radius: 10px;
     padding: 10px 20px;
+    margin: 20px;
 }
 .asterics{
     color: red;

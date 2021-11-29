@@ -36,8 +36,7 @@ import { useUserContext } from "./context/userContext";
 import Auth from "./components/auth";
 import Footer from "./components/Footer/Footer";
 
-
-
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {
   const { user } = useUserContext();

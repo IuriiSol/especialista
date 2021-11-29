@@ -40,7 +40,9 @@
 .face i{
   font-size: 28px;
 }
-
+.hiddenLink{
+  cursor: text;
+}
 
 /* /////////////////////////RESPONSIVE///////////////////////// */
 
@@ -71,9 +73,11 @@
 
  /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+
   .wrapper {
     width: 100%;
     padding: 10px;
+    position: static;
   }
   .logoImg {
     width: 50px;

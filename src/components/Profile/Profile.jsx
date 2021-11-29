@@ -2,7 +2,7 @@ import classes from './Profile.module.css'
 
 
 const Profile = ({props}) => {
-
+console.log(props.shortDescription);
   return (
           <div className={classes.profileCard}>
               <div className={classes.profileItem_wrapper}>
@@ -15,7 +15,7 @@ const Profile = ({props}) => {
                     </div>
                     <img className={props.photo ? classes.profilePhoto : classes.noData} alt="profilePhoto" src={props.photo}/>
                   </div>
-                  <div className={classes.description}>{props.shortDescription}</div>
+                  <div className={classes.description}><p>{props.shortDescription}</p></div>
                 </div>
               </div> 
           </div>

@@ -54,7 +54,7 @@ const Search = ( props ) => {
                 value={wordEntered}
                 onChange={handleFilter}
               />
-              <button onClick={clearInput}>
+              <button disabled>
                 <Link to="/searchResult">
                   {" "}
                   <i class="bi bi-search"></i>{" "}
@@ -62,7 +62,7 @@ const Search = ( props ) => {
               </button>
             </div>
             <div className={classes.goBack}>
-            <Link to="" onClick={() => props.history.goBack()}>
+              <Link to="" onClick={() => props.history.goBack()}>
                 {" "}
                 &#8592; НАЗАД{" "}
               </Link>
