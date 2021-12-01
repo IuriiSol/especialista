@@ -44,7 +44,7 @@ const Categories = () => {
                 <Link to="/medicine">
                     <div className={classes.category__item}>
                         <img src={Medicine} alt="Медицина" className={classes.category__item_image} />
-                        <span className={classes.category__item_name}>Медицина</span>
+                        <span className={classes.category__item_name}>Здоровье</span>
                     </div>
                 </Link>
             </div>

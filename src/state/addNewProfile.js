@@ -222,7 +222,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formAdress">
                   <Form.Label>Адрес по которому Вас можно найти</Form.Label>
-                  <Form.Control type="text" placeholder="(Это не обьязательное поле)" onChange={(event) => {
+                  <Form.Control type="text" placeholder="(Это поле не обьязательное)" onChange={(event) => {
                     setNewAddress(event.target.value);
                   }}/>
                 </Form.Group>  
@@ -232,7 +232,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col xs={12}>
                 <Form.Group className="mb-2" controlId="formDescription">
                   <Form.Label>Краткое описание <span className={classes.asterics}>*</span></Form.Label>
-                  <Form.Control required as="textarea" maxLength={250} rows={3} type="text" placeholder="Краткое описание того чем Вы занимаетесь. Будет показано в карточке профиля(лимит 250 символов)" onChange={(event) => {
+                  <Form.Control required as="textarea" maxLength={250} rows={3} type="text" placeholder="Краткое описание того, чем Вы занимаетесь. Будет показано в карточке профиля(лимит 250 символов)" onChange={(event) => {
                     setNewShortDescription(event.target.value);
                     setSymbolsLeft(250 - event.target.value.length)
                   }}/>
@@ -286,7 +286,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                   <Form.Label>Сайт</Form.Label>
                     <InputGroup className="mb-3">
                     <InputGroup.Text id="basic-addon3"><i class="bi bi-card-text"></i></InputGroup.Text>
-                  <Form.Control type="url" placeholder="Введите аддрес Вашего сайта" onChange={(event) => {
+                  <Form.Control type="url" placeholder="Адрес Вашего сайта" onChange={(event) => {
                     setNewSite(event.target.value);
                   }}/>
                   </InputGroup>
@@ -297,7 +297,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                   <Form.Label>Instagram</Form.Label>
                     <InputGroup className="mb-3">
                     <InputGroup.Text id="basic-addon3"><i class="bi bi-instagram"></i></InputGroup.Text>
-                  <Form.Control type="url" placeholder="Введите аддрес Вашего Instagram" onChange={(event) => {
+                  <Form.Control type="url" placeholder="Ссылка на Ваш Instagram" onChange={(event) => {
                     setNewInstagram(event.target.value);
                   }}/>
                   </InputGroup>
@@ -310,7 +310,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                   <Form.Label>Facebook</Form.Label>
                     <InputGroup className="mb-3">
                     <InputGroup.Text id="basic-addon3"><i class="bi bi-facebook"></i></InputGroup.Text>
-                  <Form.Control type="url" placeholder="Введите аддрес Вашего Facebook" onChange={(event) => {
+                  <Form.Control type="url" placeholder="Ссылка на Ваш Facebook" onChange={(event) => {
                     setNewFacebook(event.target.value);
                   }}/>
                   </InputGroup>
@@ -321,7 +321,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                   <Form.Label>Telegram</Form.Label>
                     <InputGroup className="mb-3">
                     <InputGroup.Text id="basic-addon3"><i class="bi bi-telegram"></i></InputGroup.Text>
-                  <Form.Control type="url" placeholder="Введите аддрес Вашего Telegram" onChange={(event) => {
+                  <Form.Control type="url" placeholder="Ссылка на Ваш Telegram" onChange={(event) => {
                     setNewTelegram(event.target.value);
                   }}/>
                   </InputGroup>
@@ -336,7 +336,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
             </Form.Group>
 
             <Form.Group className="mb-4 mt-3" controlId="formCheck">
-              <Form.Check type="checkbox" label="Я все перепроверил, все правильно" required/>
+              <Form.Check type="checkbox" label="Я все перепроверил(a), все правильно" required/>
             </Form.Group>
             
             <Button className="mb-5" variant="primary" type="submit" onClick={addUser}>

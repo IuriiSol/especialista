@@ -54,7 +54,7 @@ function MainScreen(props) {
         render={() => (
             <div className={classes.wrapper}>
               <div className={classes.mainTitle}>
-                <span className={classes.titleAccent}>Специалист</span> на растоянии клика
+                <span className={classes.titleAccent}>Специалист</span> на расстоянии клика
               </div>
               <div className={classes.mainScreen}>
                 <div className={classes.slider}>
@@ -65,7 +65,7 @@ function MainScreen(props) {
                     onPrevStart={onPrevStart}
                     onNextStart={onNextStart}
                     disableArrowsOnEnd={false}
-                    enableAutoPlay autoPlaySpeed={4500}
+                    enableAutoPlay autoPlaySpeed={6000}
                     itemPadding={[0, 5]}
                     className={classes.carousel}
                   >

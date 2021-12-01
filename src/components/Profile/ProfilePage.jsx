@@ -8,9 +8,18 @@ import {
 import emptyPage from "../../assets/empty.svg";
 import StoreContext from "../../StoreContext";
 import { Redirect } from 'react-router';
+import { OverlayTrigger, Button, Tooltip } from 'react-bootstrap';
+import { useState } from 'react';
 
 
 const ProfilePage = (props) => {
+  const [tooltip, setTooltip] = useState('Копировать ссылку')
+
+  const copyLink = () => {
+    navigator.clipboard.writeText(window.location.href)
+    setTooltip("Скопировано")
+  }
+
   return (
     <StoreContext.Consumer>
     {Data => (
@@ -23,13 +32,25 @@ const ProfilePage = (props) => {
           const data = Data.find(item => item.id === ID);
           if(data) {
               return <div className={classes.wrapper}>
-                <div className={classes.goBack}>
-                  <Link to="" onClick={()=> props.history.goBack()}> &#8592; НАЗАД </Link>
-                </div>
+                  <div className={classes.goBack}>
+                    <Link to="" onClick={()=> props.history.goBack()}> &#8592; НАЗАД </Link>
+                  </div>
                   <div className={data ? classes.emptyPage : classes.show}>
                     <img src={emptyPage} alt="No data" />
                   </div>
                   <div className={classes.profileItem_wrapper}>
+                      <OverlayTrigger
+                        placement="top"
+                        overlay={
+                          <Tooltip id="tooltip">
+                            {tooltip} 
+                          </Tooltip>
+                        }
+                      >
+                      <span className={classes.getLinkBtn} onClick={copyLink}>
+                        <i class="bi bi-share"></i>
+                      </span>
+                      </OverlayTrigger>
                       <h3 className={classes.name}>{data.name}</h3>
                       <h6 className={classes.proffesion}>{data.profession}</h6>
                       <h6 className={data.location ? classes.location : classes.noData}><i class="bi bi-geo-alt"></i>{data.location}</h6>

@@ -30,7 +30,7 @@ const Medicine = (props) => {
         name="Medicine"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>Медицина</h2>
+            <h2 className={classes.title}>Здоровье</h2>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}

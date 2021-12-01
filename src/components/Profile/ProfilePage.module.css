@@ -28,6 +28,17 @@
   color: #000000 !important;
   text-shadow: 0px 0px 1px rgb(138, 136, 136);
 }
+.getLinkBtn i{
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+i:hover{
+  color: rgb(0, 47, 255);
+}
+
+
 
 .name {
   display: block;
