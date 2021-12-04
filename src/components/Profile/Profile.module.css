@@ -114,7 +114,7 @@
  /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .profileItem_wrapper {
-    padding: 25px 20px;
+    padding: 15px;
     height: max-content;
     min-height: 250px;
     max-height: 300px;

@@ -11,6 +11,7 @@ import {
   } from "firebase/firestore";
 import { Button } from 'react-bootstrap';
 import { useUserContext } from "../context/userContext";
+import emptyPage from "../assets/empty.svg"
 
 
   function OnModeration() {
@@ -52,7 +53,15 @@ import { useUserContext } from "../context/userContext";
       <div className={classes.wrapper}>
         <button className={classes.logout} onClick={logoutUser}>Log out</button>
         <h3 className="mb-5">На модерации</h3>
-
+        <div
+              className={users.length ? classes.emptyPage : classes.show}
+            >
+              <img
+                className={classes.nodataResult}
+                src={emptyPage}
+                alt="No data"
+              />
+            </div>
         <div className={classes.profilesWrapper}>
 
           {users.map((user) => {

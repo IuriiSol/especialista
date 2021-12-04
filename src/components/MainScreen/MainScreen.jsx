@@ -54,7 +54,7 @@ function MainScreen(props) {
         render={() => (
             <div className={classes.wrapper}>
               <div className={classes.mainTitle}>
-                <span className={classes.titleAccent}>Специалист</span> на расстоянии клика
+                <h1><span className={classes.titleAccent}>Специалист</span> на расстоянии клика</h1>
               </div>
               <div className={classes.mainScreen}>
                 <div className={classes.slider}>

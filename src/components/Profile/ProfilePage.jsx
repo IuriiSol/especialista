@@ -51,9 +51,9 @@ const ProfilePage = (props) => {
                         <i class="bi bi-share"></i>
                       </span>
                       </OverlayTrigger>
-                      <h3 className={classes.name}>{data.name}</h3>
-                      <h6 className={classes.proffesion}>{data.profession}</h6>
-                      <h6 className={data.location ? classes.location : classes.noData}><i class="bi bi-geo-alt"></i>{data.location}</h6>
+                      <h1 className={classes.name}>{data.name}</h1>
+                      <h2 className={classes.proffesion}>{data.profession}</h2>
+                      <h3 className={data.location ? classes.location : classes.noData}><i class="bi bi-geo-alt"></i>{data.location}</h3>
                       <img className={data.photo ? classes.profilePhoto : classes.noData} src={data.photo} alt="Avatar" />
           
                       <p className={classes.description}> {data.description || data.shortDescription} </p>

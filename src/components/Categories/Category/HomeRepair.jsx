@@ -30,7 +30,7 @@ const HomeRepair = (props) => {
         name="HomeRepair"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>Ремонт по дому</h2>
+            <h1 className={classes.title}>Ремонт по дому</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}

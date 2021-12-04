@@ -15,7 +15,7 @@ const ClothingRepair = (props) => {
 
   const getData = () => {
     props.props.map((user) => {
-      if (user.category === "clothingRepair") {
+      if (user.category === "сlothingRepair") {
         Data.push(user);
       }
     });
@@ -30,7 +30,7 @@ const ClothingRepair = (props) => {
         name="ClothingRepair"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>РЕМОНТ ОДЕЖДЫ</h2>
+            <h1 className={classes.title}>РЕМОНТ ОДЕЖДЫ</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}
@@ -43,7 +43,7 @@ const ClothingRepair = (props) => {
             <div className={classes.categoryWrapper}>
               {Data.map((user) => (
                 <div className={classes.profileWrap} key={user.id}>
-                  <Link to={"/it/" + user.id}>
+                  <Link to={"/сlothingRepair/" + user.id}>
                     <Profile props={user} />
                   </Link>
                 </div>
@@ -52,7 +52,7 @@ const ClothingRepair = (props) => {
           </div>
         )}
       />
-      <Route exact path="/it/:id">
+      <Route exact path="/сlothingRepair/:id">
         <ProfilePage />
       </Route>
     </BrowserRouter>

@@ -17,6 +17,19 @@
 .hide{
     display: none;
 }
+.emptyPage{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .nodataResult{
+    width: 350px;
+    margin-top: 20%;
+  }
+  .show{
+    display: block;
+  }
 .profilePhoto {
     object-fit: cover;
     width: 150px;

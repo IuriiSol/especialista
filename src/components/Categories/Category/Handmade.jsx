@@ -30,7 +30,7 @@ const Handmade = (props) => {
         name="Handmade"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>Handmade</h2>
+            <h1 className={classes.title}>Handmade</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}

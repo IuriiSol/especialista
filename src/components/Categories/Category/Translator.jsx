@@ -30,7 +30,7 @@ const Translator = (props) => {
         name="Translator"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>ПЕРЕВОДЧИКИ</h2>
+            <h1 className={classes.title}>ПЕРЕВОДЧИКИ</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}

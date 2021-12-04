@@ -30,7 +30,7 @@ const Guide = (props) => {
         name="Guide"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>Гид, Экскурсовод</h2>
+            <h1 className={classes.title}>Гид, Экскурсовод</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}

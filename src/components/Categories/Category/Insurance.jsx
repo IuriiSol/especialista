@@ -30,7 +30,7 @@ const Insurance = (props) => {
         name="Insurance"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>Страховые агенты</h2>
+            <h1 className={classes.title}>Страховые агенты</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}

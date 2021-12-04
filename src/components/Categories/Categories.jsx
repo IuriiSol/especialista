@@ -6,7 +6,7 @@ import { Sauna, BabySitter, Beauty, Cafe, CarRepair, Cleaning, ClothingRepair, P
 const Categories = () => {
   return (
       <div className={classes.wrapper}>
-        <h2 className={classes.title}>Категории</h2>
+        <h1 className={classes.title}>Категории</h1>
         <div className={classes.categoryWrapper}>
             <div className={classes.catItemWrap}>
                 <Link to={location => ({ ...location, pathname: "/carRepair" })} >
@@ -164,7 +164,7 @@ const Categories = () => {
                 <Link to="/ferms">
                     <div className={classes.category__item}>
                         <img src={Ferms} alt="Фермы" className={classes.category__item_image} />
-                        <span className={classes.category__item_name}>Фермы</span>
+                        <span className={classes.category__item_name}>домашняя продукция</span>
                     </div>
                 </Link>
             </div>

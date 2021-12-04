@@ -30,7 +30,7 @@ const Other = (props) => {
         name="Other"
         render={() => (
           <div className={classes.wrapper}>
-            <h2 className={classes.title}>Разное</h2>
+            <h1 className={classes.title}>Разное</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}
