@@ -66,9 +66,12 @@
   color: rgb(114, 113, 113);
 }
 .description {
+ display: block;
+}
+.cardLine{
   font-size: 15px;
-  text-align: justify;
   line-height: 1.3em;
+  display: block;
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -93,9 +96,8 @@
     color: rgb(114, 113, 113);
     margin-bottom: 0px;
   }
-  .description {
+  .cardLine {
     font-size: 14px;
-    text-align: justify;
     line-height: 1.2em;
   }
   .location {
@@ -158,9 +160,8 @@
     font-size: 13px;
     color: rgb(114, 113, 113);
   }
-  .description {
+  .cardLine{
     font-size: 13px;
-    text-align: justify;
     line-height: 1.3em;
   }
  }

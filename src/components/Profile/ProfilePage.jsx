@@ -56,7 +56,19 @@ const ProfilePage = (props) => {
                       <h3 className={data.location ? classes.location : classes.noData}><i class="bi bi-geo-alt"></i>{data.location}</h3>
                       <img className={data.photo ? classes.profilePhoto : classes.noData} src={data.photo} alt="Avatar" />
           
-                      <p className={classes.description}> {data.description || data.shortDescription} </p>
+                      {/* <p className={classes.description}> {data.description || data.shortDescription} </p> */}
+                      <div className={classes.linesWrapper}>
+                        <span className={classes.description}> {data.line0 || data.cardLine0}</span>
+                        <span className={classes.description}> {data.line1 || data.cardLine1}</span>
+                        <span className={classes.description}> {data.line2 || data.cardLine2}</span>
+                        <span className={classes.description}> {data.line3 || data.cardLine3}</span>
+                        <span className={classes.description}> {data.line4 || data.cardLine4}</span>
+                        <span className={classes.description}> {data.line5 || data.cardLine5}</span>
+                        <span className={classes.description}> {data.line6 || data.cardLine6}</span>
+                        <span className={classes.description}> {data.line7 || data.cardLine7}</span>
+                        <span className={classes.description}> {data.line8 || data.cardLine8}</span>
+                        <span className={classes.description}> {data.line9 || data.cardLine9}</span>
+                      </div>
       
                       <div className={classes.contacts}>
                           <h5>Контакты</h5>

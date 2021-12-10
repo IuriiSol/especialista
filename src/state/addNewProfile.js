@@ -172,20 +172,20 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                     <option value="tattoo">Tattoo</option>
                     <option value="guide">Гиды, Экскурсоводы</option>
                     <option value="cafe">Рестораны, кафе, бары</option>
+                    <option value="carRepair">Ремонт авто</option>
                     <option value="clothingRepair">Ремонт одежды</option>
                     <option value="electronicRepair">Ремонт техники</option>
-                    <option value="ferms">Фермы</option>
                     <option value="homeRepair">Ремонт по дому</option>
+                    <option value="ferms">Домашняя продукция</option>
                     <option value="imobiliario">Риелторы</option>
                     <option value="insurance">Страховые агенты</option>
                     <option value="it">Интернет технологии</option>
-                    <option value="carRepair">Ремонт авто</option>
                     <option value="medicine">Медицина</option>
                     <option value="pastryChef">Кондитеры, повары</option>
                     <option value="photographer">Фото/Видео</option>
                     <option value="sauna">Сауна, баня</option>
-                    <option value="sport">Спорт</option>
-                    <option value="teacher">Репетитор</option>
+                    <option value="sport">Тренеры, коучи, инструкторы</option>
+                    <option value="teacher">Репетиторы</option>
                     <option value="translator">Переводчики</option>
                     <option value="transportation">Перевозки</option>
                     <option value="other">Разное, другое</option>
@@ -204,7 +204,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formLocation">
                   <Form.Label>Из какого Вы города</Form.Label>
-                  <Form.Control type="text" placeholder="Если это не важно - оставте поле пустым" onChange={(event) => {
+                  <Form.Control type="text" placeholder="Если это не важно - оставьте поле пустым" onChange={(event) => {
                     setNewLocation(event.target.value);
                   }}/>
                 </Form.Group>  
@@ -222,7 +222,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col md xs={12}>
                 <Form.Group className="mb-2" controlId="formAdress">
                   <Form.Label>Адрес по которому Вас можно найти</Form.Label>
-                  <Form.Control type="text" placeholder="(Это поле не обьязательное)" onChange={(event) => {
+                  <Form.Control type="text" placeholder="Это поле не обьязательное" onChange={(event) => {
                     setNewAddress(event.target.value);
                   }}/>
                 </Form.Group>  
@@ -250,7 +250,7 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
               <Col>
                 <Form.Group className="mb-2" controlId="formTags">
                   <Form.Label>Слова которые помогут найти Вас в поиске(Tags) </Form.Label>
-                  <Form.Control as="textarea" rows={3} type="text" placeholder="Пример: портимао дантист стоматолог ортодонт" onChange={(event) => {
+                  <Form.Control as="textarea" rows={3} maxLength={100} type="text" placeholder="Пример: портимао дантист стоматолог ортодонт" onChange={(event) => {
                     setNewTags(event.target.value);
                   }}/>
                 </Form.Group>

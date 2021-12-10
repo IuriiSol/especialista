@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -64,11 +64,14 @@ i:hover{
   display: none;
 }
 
-p.description {
-  font-size: 16px;
-  text-align: justify;
-  line-height: 1.5em;
+.linesWrapper{
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+span.description{
+  display: block;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 .location {
   text-align: center;
@@ -80,7 +83,7 @@ p.description {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: auto;
+  padding-top: 20px;
 }
 .link{
   margin-bottom: 5px;
@@ -141,10 +144,9 @@ p.description {
     font-size: 18px;
     margin-bottom: 10px;
   }
-  .description {
-    max-width: 100%;
+  span.description{
+    display: block;
     font-size: 16px;
-    text-align: justify;
     line-height: 1.2em;
   }
   .contacts{
@@ -185,9 +187,9 @@ p.description {
   .location{
     font-size: 13px;
   }
-  p.description {
-    font-size: 13px;
-    text-align: justify;
+  span.description{
+    display: block;
+    font-size: 12px;
     line-height: 1.5em;
   }
   .contacts{

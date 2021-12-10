@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 .wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -11,7 +11,7 @@
 }
 .categoryWrapper {
   padding: 0 20px;
-  width: 1300px;
+  width: 100%;
   margin: 0px auto;
   display: grid;
   justify-content: space-evenly;

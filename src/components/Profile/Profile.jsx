@@ -15,7 +15,15 @@ console.log(props.shortDescription);
                     </div>
                     <img className={props.photo ? classes.profilePhoto : classes.noData} alt="profilePhoto" src={props.photo}/>
                   </div>
-                  <div className={classes.description}><p>{props.shortDescription}</p></div>
+                  <div className={classes.description}>
+                    {/* <p>{props.shortDescription}</p> */}
+                    <span className={classes.cardLine}>{props.cardLine0 || props.shortDescription}</span>
+                    <span className={classes.cardLine}>{props.cardLine1}</span>
+                    <span className={classes.cardLine}>{props.cardLine2}</span>
+                    <span className={classes.cardLine}>{props.cardLine3}</span>
+                    <span className={classes.cardLine}>{props.cardLine4}</span>
+                    <span className={classes.cardLine}>{props.cardLine5}</span>
+                  </div>
                 </div>
               </div> 
           </div>

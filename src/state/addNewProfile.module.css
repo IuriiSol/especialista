@@ -1,57 +1,131 @@
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom: 65px;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 65px;
 }
 .title {
-    display: block;
-    font-family: 'Montserrat', sans-serif;
-    margin: 40px auto 30px auto;
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--title);
-  }
-.hide{
-    display: none;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  margin: 40px auto 30px auto;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title);
 }
-.emptyPage{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-  }
-  .nodataResult{
-    width: 350px;
-    margin-top: 20%;
-  }
-  .show{
-    display: block;
-  }
+.hide {
+  display: none;
+}
+.emptyPage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.nodataResult {
+  width: 250px;
+  margin-top: 10%;
+}
+.show {
+  display: block;
+}
 .profilePhoto {
-    object-fit: cover;
-    width: 150px;
-    height: 150px;
-    border-radius: 6px;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 6px;
 }
-.formWrapper{
-    width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    align-items: center;
+.formWrapper {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
 }
-.forma{
+.forma {
+  width: 100%;
+}
+.formWrapper > input,
+.formWrapper > textarea {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+.profilesWrapper {
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.profileItem {
+  padding: 15px;
+  border: 1px solid thistle;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.logout {
+  background: rgb(255, 255, 255);
+  border: 2px solid #b2bec3;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 20px;
+}
+.asterics {
+  color: red;
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1280px) {
+  .App {
+    border: 3px solid red;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1024px) {
+  .App {
+    border: 3px solid blue;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .title {
+    margin: 20px auto 30px auto;
+    font-size: 30px;
+  }
+  .formWrapper {
+    width: 95%;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .wrapper {
     width: 100%;
-}
-.formWrapper>input,
-.formWrapper>textarea {
-    margin-bottom: 10px;
+    padding: 0 0 50px 0;
+  }
+  .title {
+    font-size: 28px;
+    margin: 20px auto 10px auto;
+  }
+  .formWrapper {
+    width: 95%;
+  }
+  .forma {
+    width: 100%;
+  }
+  .formWrapper > input,
+  .formWrapper > textarea {
+    margin-bottom: 5px;
     padding: 5px 10px;
-}
-.profilesWrapper{
+  }
+  .profilesWrapper {
     width: 100%;
     max-width: 1200px;
     flex-wrap: wrap;
@@ -59,97 +133,23 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}
-.profileItem{
+  }
+  .profileItem {
     padding: 15px;
     border: 1px solid thistle;
     background: #fff;
     border-radius: 5px;
-    margin-bottom: 40px;
-}
+    margin-bottom: 10px;
+  }
+  button {
+    width: 100%;
+  }
 
-.logout{
+  .logout {
     background: rgb(255, 255, 255);
     border: 2px solid #b2bec3;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 5px 10px;
     margin: 20px;
-}
-.asterics{
-    color: red;
-}
-
- /* X-Large devices (large desktops, 1200px and up) */
- @media (max-width: 1280px) {
-    .App{
-      border: 3px solid red;
-    }
-   }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (max-width: 1024px) {
-    .App{
-      border: 3px solid blue;
-    }
-   }
-  
-   /* Medium devices (tablets, 768px and up) */
-  @media (max-width: 768px) { 
-    .title {
-        margin: 20px auto 30px auto;
-        font-size: 30px;
-    }
-    .formWrapper{
-        width: 95%;
-    }
   }
-  
-   /* Small devices (landscape phones, 576px and up) */
-  @media (max-width: 576px) {
-    .wrapper{
-        width: 100%;
-        padding: 0 0 50px 0;
-    }
-    .title {
-        font-size: 28px;
-        margin: 20px auto 10px auto;
-    }
-    .formWrapper{
-        width: 95%;
-    }
-    .forma{
-        width: 100%;
-    }
-    .formWrapper>input,
-    .formWrapper>textarea {
-        margin-bottom: 5px;
-        padding: 5px 10px;
-    }
-    .profilesWrapper{
-        width: 100%;
-        max-width: 1200px;
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .profileItem{
-        padding: 15px;
-        border: 1px solid thistle;
-        background: #fff;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-    button{
-        width: 100%;
-    }
-    
-    .logout{
-        background: rgb(255, 255, 255);
-        border: 2px solid #b2bec3;
-        border-radius: 10px;
-        padding: 5px 10px;
-        margin: 20px;
-    }
-   }
+}

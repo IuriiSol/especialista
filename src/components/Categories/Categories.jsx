@@ -28,7 +28,7 @@ const Categories = () => {
                 <Link to={location => ({ ...location, pathname: "/it" })} >
                     <div className={classes.category__item}>
                         <img src={IT} alt="Интернет технологии" className={classes.category__item_image} />
-                        <span className={classes.category__item_name}>IT</span>
+                        <span className={classes.category__item_name}>сфера IT</span>
                     </div>
                 </Link>
             </div>

@@ -31,7 +31,7 @@ const IT = (props) => {
         name="IT"
         render={() => (
           <div className={classes.wrapper}>
-            <h1 className={classes.title}>IT</h1>
+            <h1 className={classes.title}>IT-специалисты</h1>
             <div className={classes.goBack}>
               <Link to="" onClick={() => props.history.goBack()}>
                 {" "}
