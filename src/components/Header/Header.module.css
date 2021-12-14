@@ -83,7 +83,7 @@ a {
  /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .wrapper {
-    padding: 15px 0;
+    padding: 10px 0 15px 0;
   }
   .logoImg {
     width: 100px;

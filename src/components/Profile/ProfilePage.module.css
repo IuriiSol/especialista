@@ -110,7 +110,7 @@ span.description{
  /* Medium devices (tablets, 768px and up) */
  @media (max-width: 768px) { 
   .wrapper{
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
   .title {
     font-size: 30px;
@@ -161,7 +161,7 @@ span.description{
   .wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 10px 0 70px 0;
+    padding: 10px 0 100px 0;
   }
   .name {
     font-size: 24px;

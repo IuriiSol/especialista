@@ -24,8 +24,8 @@
   padding-top: 30px;
 }
 .nodataResult {
-  width: 250px;
-  margin-top: 10%;
+  width: 300px;
+  margin-top: 20%;
 }
 .show {
   display: block;
@@ -143,6 +143,12 @@
   }
   button {
     width: 100%;
+  }
+  button.logout {
+    width: 90%;
+  }
+  .nodataResult{
+    width: 60vw;
   }
 
   .logout {

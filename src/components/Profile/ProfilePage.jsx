@@ -8,7 +8,7 @@ import {
 import emptyPage from "../../assets/empty.svg";
 import StoreContext from "../../StoreContext";
 import { Redirect } from 'react-router';
-import { OverlayTrigger, Button, Tooltip } from 'react-bootstrap';
+import { OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { useState } from 'react';
 
 

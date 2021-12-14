@@ -24,7 +24,8 @@
   position: relative;
 }
 .social{
-  display: flex;flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .insta,
 .face{
@@ -78,7 +79,7 @@
   .wrapper {
     width: 100%;
     padding: 10px;
-    position: static;
+    position: fixed;
   }
   .logoImg {
     width: 50px;

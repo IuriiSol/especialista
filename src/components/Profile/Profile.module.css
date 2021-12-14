@@ -39,7 +39,7 @@
 }
 .titleProfession{
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
 }
 .profilePhoto {
@@ -79,16 +79,17 @@
   .profileItem_wrapper {
     border-radius: 10px;
     height: 225px;
-    padding: 25px;
+    padding: 15px;
   }
   .profilePhoto {
     object-fit: cover;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 6px;
+    margin-left: 10px;
   }
   .name h5 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
   }
   .profession {
@@ -97,8 +98,8 @@
     margin-bottom: 0px;
   }
   .cardLine {
-    font-size: 14px;
-    line-height: 1.2em;
+    font-size: 12px;
+    line-height: 1.3em;
   }
   .location {
     font-size: 12px;
@@ -132,7 +133,7 @@
   }
   .titleProfession{
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
   }
   .profilePhoto {

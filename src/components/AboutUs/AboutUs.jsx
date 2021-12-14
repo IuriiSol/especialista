@@ -4,7 +4,7 @@ import img2 from "../../assets/about/2.svg"
 import img3 from "../../assets/about/3.svg"
 import img4 from "../../assets/about/4.svg"
 
-const AboutUs = () => {
+const AboutUs = (props) => {
     return (
       <div className={classes.wrapper}>
         <h2 className={classes.title}>О проекте</h2>
@@ -12,7 +12,7 @@ const AboutUs = () => {
           <div className={classes.paragraph}>
             <img className={classes.aboutImg} src={img1} alt="aboutImage" />
             <p className={classes.text}>
-              Сайт создан с целью собрать максимально полный список всех русскоговорящих специалистов, которые предлагают свои услуги на территории Португалии.
+              Сайт создан с целью собрать максимально полный список всех русскоговорящих специалистов, которые предлагают свои услуги на территории Португалии. На данный момент, количество профилей на сайте равно - <span className={classes.quantity}>{props.props.length}</span>. Присоединяйтесь и Вы.
             </p>
           </div>
           <div className={classes.paragraph}>

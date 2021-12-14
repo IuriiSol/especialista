@@ -36,7 +36,6 @@ import { useUserContext } from "./context/userContext";
 import Auth from "./components/auth";
 import Footer from "./components/Footer/Footer";
 
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {
   const { user } = useUserContext();
@@ -50,7 +49,7 @@ function App() {
           <Route exact path="/" name="MainScreen"><MainScreen props={Data}/></Route>
           <Route path="/searchResult" name="Search"><Search props={Data}/></Route>
           <Route path="/categories" name="Categories" component={Categories} />
-          <Route path="/aboutUs" name="AboutUs" component={AboutUs} />
+          <Route path="/aboutUs" name="AboutUs"><AboutUs props={Data}/></Route>
           <Route path="/addProfile" name="AddProfile" component={AddNewProfile} />
           <Route path="/admin" name="OnModeration"> {user ? <OnModeration /> : <Auth />} </Route>
           {/*/////////////////////////////////////////// Categories ///////////////////////////////////////////*/}
