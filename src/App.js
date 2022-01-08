@@ -35,6 +35,7 @@ import StoreContext from "./StoreContext";
 import { useUserContext } from "./context/userContext";
 import Auth from "./components/auth";
 import Footer from "./components/Footer/Footer";
+import Snowfall from 'react-snowfall'
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       <>
       <BrowserRouter>
         <div className="App">
+          <Snowfall />
           <Header />
           <Route exact path="/" name="MainScreen"><MainScreen props={Data}/></Route>
           <Route path="/searchResult" name="Search"><Search props={Data}/></Route>

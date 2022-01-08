@@ -165,11 +165,11 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                     setNewCategory(event.target.value);}
                   }>
                     <option>Выберите категорию</option>
-                    <option value="babySitter">Babysitter</option>
-                    <option value="beauty">Beauty</option>
+                    <option value="babySitter">Babysitter, няня</option>
+                    <option value="beauty">Beauty сфера</option>
                     <option value="cleaning">Cleaning (Уборка)</option>
                     <option value="handmade">Handmade</option>
-                    <option value="tattoo">Tattoo</option>
+                    <option value="tattoo">Tattoo-мастер</option>
                     <option value="guide">Гиды, Экскурсоводы</option>
                     <option value="cafe">Рестораны, кафе, бары</option>
                     <option value="carRepair">Ремонт авто</option>
@@ -180,14 +180,14 @@ import { Form, Button, Row, Col, Modal, InputGroup } from 'react-bootstrap';
                     <option value="imobiliario">Риелторы</option>
                     <option value="insurance">Страховые агенты</option>
                     <option value="it">Интернет технологии</option>
-                    <option value="medicine">Медицина</option>
+                    <option value="medicine">Здоровье и медицина</option>
                     <option value="pastryChef">Кондитеры, повары</option>
                     <option value="photographer">Фото/Видео</option>
                     <option value="sauna">Сауна, баня</option>
                     <option value="sport">Тренеры, коучи, инструкторы</option>
                     <option value="teacher">Репетиторы</option>
                     <option value="translator">Переводчики</option>
-                    <option value="transportation">Перевозки</option>
+                    <option value="transportation">Перевозчики</option>
                     <option value="other">Разное, другое</option>
                   </Form.Select>
                 </Form.Group>

@@ -68,6 +68,17 @@ const ProfilePage = (props) => {
                         <span className={classes.description}> {data.line7 || data.cardLine7}</span>
                         <span className={classes.description}> {data.line8 || data.cardLine8}</span>
                         <span className={classes.description}> {data.line9 || data.cardLine9}</span>
+                        <span className={classes.description}> {data.line10 || null}</span>
+                        <span className={classes.description}> {data.line11 || null}</span>
+                        <span className={classes.description}> {data.line12 || null}</span>
+                        <span className={classes.description}> {data.line13 || null}</span>
+                        <span className={classes.description}> {data.line14 || null}</span>
+                        <span className={classes.description}> {data.line15 || null}</span>
+                        <span className={classes.description}> {data.line16 || null}</span>
+                        <span className={classes.description}> {data.line17 || null}</span>
+                        <span className={classes.description}> {data.line18 || null}</span>
+                        <span className={classes.description}> {data.line19 || null}</span>
+                        <span className={classes.description}> {data.line20 || null}</span>
                       </div>
       
                       <div className={classes.contacts}>

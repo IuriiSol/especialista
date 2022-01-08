@@ -12,7 +12,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 .profileItem_wrapper {
-  border: 2px solid #b2bec3;
+  border: 1px solid #b2bec3;
   width: 60%;
   border-radius: 10px;
   background: white;
@@ -57,6 +57,7 @@ i:hover{
   float: left;
   width: 150px;
   height: 150px;
+  border: 1px solid rgb(233, 233, 233);
   border-radius: 6px;
   margin: 20px 15px 5px 0;
 }

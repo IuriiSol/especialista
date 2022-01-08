@@ -52,7 +52,7 @@ import emptyPage from "../assets/empty.svg"
     return (
       <div className={classes.wrapper}>
         <button className={classes.logout} onClick={logoutUser}>Log out</button>
-        <h3 className="mb-5">На модерации</h3>
+        <h3 className="mb-3">На модерации</h3>
         <div
               className={users.length ? classes.emptyPage : classes.show}
             >
@@ -108,7 +108,7 @@ import emptyPage from "../assets/empty.svg"
                 <h5>Facebook: {user.facebook || "Not indicated"}</h5>
                 <h5>Telegram: {user.telegram || "Not indicated"}</h5>
                 
-                <Button className="mb-2 mt-3" variant="primary"
+                <Button className="mb-0 mt-3" variant="primary"
                   onClick={() => {
                     promoteUser(user.id, user.isPromoted);
                     setTimeout(refreshPage, 500)
@@ -116,7 +116,7 @@ import emptyPage from "../assets/empty.svg"
                 >
                   Promote
                 </Button>{' '}
-                <Button className="mb-2 mt-3" variant="danger"
+                <Button className="mb-0 mt-3" variant="danger"
                   onClick={() => {
                     deleteUser(user.id);
                     setTimeout(refreshPage, 1500);
@@ -124,7 +124,7 @@ import emptyPage from "../assets/empty.svg"
                   >
                   Delete User
                 </Button>{' '}
-                <Button className="mb-2 mt-3" variant="success" 
+                <Button className="mb-0 mt-3" variant="success" 
                     onClick={() => {
                       approveUser()
                       deleteUser(user.id);

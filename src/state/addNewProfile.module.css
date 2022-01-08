@@ -52,8 +52,8 @@
   padding: 5px 10px;
 }
 .profilesWrapper {
-  width: 100%;
-  max-width: 1200px;
+  width: 50%;
+  max-width: 800px;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
@@ -102,20 +102,23 @@
   .formWrapper {
     width: 95%;
   }
+  .profilesWrapper{
+    width: 95vw;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
   .wrapper {
     width: 100%;
-    padding: 0 0 50px 0;
+    padding: 0 10px 70px 10px;
   }
   .title {
     font-size: 28px;
     margin: 20px auto 10px auto;
   }
   .formWrapper {
-    width: 95%;
+    width: 90vw;
   }
   .forma {
     width: 100%;
@@ -127,7 +130,6 @@
   }
   .profilesWrapper {
     width: 100%;
-    max-width: 1200px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
@@ -135,11 +137,15 @@
     justify-content: space-evenly;
   }
   .profileItem {
+    width: 100%;
     padding: 15px;
     border: 1px solid thistle;
     background: #fff;
     border-radius: 5px;
     margin-bottom: 10px;
+  }
+  .profileItem h5{
+    font-size: 14px;
   }
   button {
     width: 100%;

@@ -12,7 +12,7 @@ const Footer = () => {
         <span className={classes.text}>Все права защищены. ©Espe<Link className={classes.hiddenLink} to="/admin">c</Link>ialista.pt 2021</span>
         <div classes={classes.social}>
           <a className={classes.insta} href="https://www.instagram.com/especialista.pt/" target="_blank"> <i class="bi bi-instagram"></i> </a>
-          <a className={classes.face} href="https://www.facebook.com/profile.php?id=100074275574141" target="_blank"> <i class="bi bi-facebook"></i> </a>
+          <a className={classes.face} href="https://www.facebook.com/especialista.pt/" target="_blank"> <i class="bi bi-facebook"></i> </a>
         </div>
       </div>
     </div>
